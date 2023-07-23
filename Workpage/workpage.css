@@ -1,0 +1,441 @@
+body{
+    background-color: #292929;
+    font-family: Poppins,sans-serif;
+    
+}
+
+.menu-button{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.bar{
+    width: 100%;
+    height: 4px;
+    background-color: #FFE500;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.menu-button.active .bar {
+    background-color: #292929; /* Change the color to white (or any other color you prefer) */
+}
+
+.menu-button.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.menu-button.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-button.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+
+.semi-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #FFE500;
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+    z-index: 998;
+    font-family: Poppins,sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 36px;
+}
+
+.semi-menu.active {
+    width: 300px;
+}
+
+.semi-menu ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.semi-menu li {
+    margin-bottom: 10px;
+}
+
+.semi-menu a {
+    text-decoration: none;
+    color: #292929;
+}
+
+
+
+.icons-display{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon {
+    list-style: none;
+    text-decoration: none;
+    margin-right: 10px; 
+    font-size: 24px; 
+    color: #FFE500; 
+    padding: 16px;
+}
+
+.container{
+    margin: 3%;
+}
+
+
+.work-title{
+    font-size: 40px;
+    font-weight: 500;
+    color: #FFE500;
+}
+
+.project-cards-flex{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.mobile-app-card{
+    width: 40vw;
+    height: auto;
+    border-radius: 15px;
+    background-color: #FFE500;
+    margin-right: 20px;
+}
+
+.mobile-app-card img{
+    width: 100%;
+    height: 20vw;
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+
+.mobile-app-card h2{
+    color: #292929;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 1.5vw;
+}
+
+.bnr-web-card{
+    width: 40vw;
+    height: auto;
+    border-radius: 15px;
+    background-color: #FFE500;
+    margin-right: 20px;
+}
+
+.bnr-web-card img{
+    width: 100%;
+    height: 20vw;
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+
+.bnr-web-card h2{
+    color: #292929;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 1.5vw;
+}
+
+.my-website-card{
+    width: 40vw;
+    height: auto;
+    border-radius: 15px;
+    background-color: #FFE500;
+    margin-right: 20px;
+}
+
+.my-website-card img{
+    width: 100%;
+    height: 20vw;
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+
+.my-website-card h2{
+    color: #292929;
+    margin-top: 10px;
+    padding: 20px; 
+    font-size: 1.5vw;
+}
+
+
+    /*-------------------------------------- MEDIA QUERIES -------------------------------------*/
+
+    @media (min-width: 768px) and (max-width: 1008px) {
+
+        .project-cards-flex{
+            display: block;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .mobile-app-card{
+            width: 90vw;
+            height: auto;
+            border-radius: 15px;
+            background-color: #FFE500;
+            border: 1px solid #292929;
+            
+        }
+
+        .mobile-app-card img{
+            width: 100%;
+            height: 50vw;
+            display: block;
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .mobile-app-card h2{
+            color: #292929;
+            padding-top: 20px;
+            font-size: 3vw;
+            
+        }
+
+        .bnr-web-card{
+            width: 90vw;
+            height: auto;
+            border-radius: 15px;
+            background-color: #FFE500;
+            border: 1px solid #292929;
+            margin-top: 20px;
+        }
+        
+        .bnr-web-card img{
+            width: 100%;
+            height: 50vw;
+            display: block;
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .bnr-web-card h2{
+            color: #292929;
+            padding-top: 20px;
+            font-size: 3vw;
+        }
+
+        .my-website-card{
+            width: 90vw;
+            height: auto;
+            border-radius: 15px;
+            background-color: #FFE500;
+            border: 1px solid #292929;
+            margin-top: 20px;
+        }
+        
+        .my-website-card img{
+            width: 100%;
+            height: 50vw;
+            display: block;
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .my-website-card h2{
+            color: #292929;
+            padding-top: 20px;
+            font-size: 3vw;
+        }
+        
+        
+    }
+
+    @media (min-width: 350px) and (max-width: 768px) {
+
+        .project-cards-flex{
+            display: block;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .mobile-app-card{
+            width: 90vw;
+            height: auto;
+            border-radius: 15px;
+            background-color: #FFE500;
+            border: 1px solid #292929;
+            
+        }
+
+        .mobile-app-card img{
+            width: 100%;
+            height: 50vw;
+            display: block;
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .mobile-app-card h2{
+            color: #292929;
+            padding-top: 20px;
+            font-size: 4vw;
+            
+        }
+
+        .bnr-web-card{
+            width: 90vw;
+            height: auto;
+            border-radius: 15px;
+            background-color: #FFE500;
+            border: 1px solid #292929;
+            margin-top: 20px;
+        }
+        
+        .bnr-web-card img{
+            width: 100%;
+            height: 50vw;
+            display: block;
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .bnr-web-card h2{
+            color: #292929;
+            padding-top: 20px;
+            font-size: 4vw;
+        }
+
+        .my-website-card{
+            width: 90vw;
+            height: auto;
+            border-radius: 15px;
+            background-color: #FFE500;
+            border: 1px solid #292929;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .my-website-card img{
+            width: 100%;
+            height: 50vw;
+            display: block;
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .my-website-card h2{
+            color: #292929;
+            padding-top: 20px;
+            font-size: 4vw;
+        }
+
+        
+        
+    }
+
+
+    @media (min-width: 250px) and (max-width: 350px) {
+
+        .work-title{
+            font-size: 20px;
+            font-weight: 500;
+            color: #FFE500;
+        }
+
+        .menu-button{
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 22px;
+            height: 18px;
+            cursor: pointer;
+            z-index: 9999;
+        }
+
+        .project-cards-flex{
+            display: block;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .mobile-app-card{
+            width: 90vw;
+            height: auto;
+            border-radius: 15px;
+            background-color: #FFE500;
+            border: 1px solid #292929;
+            
+        }
+
+        .mobile-app-card img{
+            width: 100%;
+            height: 50vw;
+            display: block;
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .mobile-app-card h2{
+            color: #292929;
+            padding-top: 20px;
+            font-size: 4vw;
+            
+        }
+
+        .bnr-web-card{
+            width: 90vw;
+            height: auto;
+            border-radius: 15px;
+            background-color: #FFE500;
+            border: 1px solid #292929;
+            margin-top: 20px;
+        }
+        
+        .bnr-web-card img{
+            width: 100%;
+            height: 50vw;
+            display: block;
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .bnr-web-card h2{
+            color: #292929;
+            padding-top: 20px;
+            font-size: 4vw;
+        }
+
+        .my-website-card{
+            width: 90vw;
+            height: auto;
+            border-radius: 15px;
+            background-color: #FFE500;
+            border: 1px solid #292929;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .my-website-card img{
+            width: 100%;
+            height: 50vw;
+            display: block;
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .my-website-card h2{
+            color: #292929;
+            padding-top: 20px;
+            font-size: 4vw;
+        }
+
+        
+        
+    }
+    

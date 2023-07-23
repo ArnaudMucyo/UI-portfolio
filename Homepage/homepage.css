@@ -38,8 +38,8 @@ body{
 
 .intro{
     color: #fff;
-    font-family: Russo One,sans-serif;
-    font-weight: 100;
+    font-family: Poppins,sans-serif;
+    font-weight: 500;
     letter-spacing: 3px;
     font-size: 75px;
     margin-left: 7%;
@@ -51,6 +51,7 @@ body{
     font-size: 64px;
     letter-spacing: 5px;
     text-align: center;
+    margin-top: -40px;
 }
 
 .design{
@@ -170,7 +171,7 @@ body{
     
     .intro{
         color: #fff;
-        font-family: Russo One,sans-serif;
+        font-family: Poppins,sans-serif;
         letter-spacing: 3px;
         font-size: 32px;
         margin-left: 8%;
