@@ -71,19 +71,19 @@ body{
     width: 80%;
 }
 
-.menu-button.focus .bar {
+.menu-button.active .bar {
     background-color: #292929; /* Change the color to white (or any other color you prefer) */
 }
 
-.menu-button.focus .bar:nth-child(1) {
+.menu-button.active .bar:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
 }
 
-.menu-button.focus .bar:nth-child(2) {
+.menu-button.active .bar:nth-child(2) {
     opacity: 0;
 }
 
-.menu-button.focus .bar:nth-child(3) {
+.menu-button.active .bar:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
 }
 
@@ -199,9 +199,10 @@ body{
 
     .menu-divider {
         border-top: 0.5px;
-        border-color: #292929;
-        opacity: 8;
+        border-color:#292929;
+        opacity: 0.8;
         width: 100%;
+        text-decoration: none;
     }
 
     .icon {
