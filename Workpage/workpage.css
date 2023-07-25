@@ -137,7 +137,7 @@ body{
 }
 
 .bnr-web-card{
-    width: 40vw;
+    width: 28vw;
     height: auto;
     border-radius: 15px;
     background-color: #FFE500;
@@ -159,7 +159,7 @@ body{
 }
 
 .my-website-card{
-    width: 40vw;
+    width: 28vw;
     height: auto;
     border-radius: 15px;
     background-color: #FFE500;
@@ -215,7 +215,7 @@ body{
         }
 
         .bnr-web-card{
-            width: 90vw;
+            width: 80vw;
             height: auto;
             border-radius: 15px;
             background-color: #FFE500;
@@ -225,7 +225,7 @@ body{
         
         .bnr-web-card img{
             width: 100%;
-            height: 50vw;
+            height: 55vw;
             display: block;
             border-radius: 15px 15px 0 0;
         }
@@ -237,7 +237,7 @@ body{
         }
 
         .my-website-card{
-            width: 90vw;
+            width: 80vw;
             height: auto;
             border-radius: 15px;
             background-color: #FFE500;
@@ -247,7 +247,7 @@ body{
         
         .my-website-card img{
             width: 100%;
-            height: 50vw;
+            height: 55vw;
             display: block;
             border-radius: 15px 15px 0 0;
         }
@@ -293,7 +293,7 @@ body{
         }
 
         .bnr-web-card{
-            width: 90vw;
+            width: 80vw;
             height: auto;
             border-radius: 15px;
             background-color: #FFE500;
@@ -303,7 +303,7 @@ body{
         
         .bnr-web-card img{
             width: 100%;
-            height: 50vw;
+            height: 55vw;
             display: block;
             border-radius: 15px 15px 0 0;
         }
@@ -315,7 +315,7 @@ body{
         }
 
         .my-website-card{
-            width: 90vw;
+            width: 80vw;
             height: auto;
             border-radius: 15px;
             background-color: #FFE500;
@@ -326,7 +326,7 @@ body{
         
         .my-website-card img{
             width: 100%;
-            height: 50vw;
+            height: 55vw;
             display: block;
             border-radius: 15px 15px 0 0;
         }
